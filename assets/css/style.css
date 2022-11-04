@@ -55,7 +55,6 @@ li{
     padding: 0;
     background: #36393e;
     box-shadow: 0 0 1em rgba(0,0,0,0.5);
-    min-width: 1080px;
 }
 
 .content{
@@ -82,6 +81,7 @@ li{
 
 /* Nav */
 .h_nav{
+    display: block;
     height: 100%;
     font-size: 70%;
     text-align: left;
