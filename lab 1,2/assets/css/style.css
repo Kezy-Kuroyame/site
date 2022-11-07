@@ -4,7 +4,6 @@ body{
     font-size: 1em;
     background-color: #252426;
     line-height: 1.6;
-    
 }
 
 *,
@@ -55,6 +54,12 @@ li{
     padding: 0;
     background: #36393e;
     box-shadow: 0 0 1em rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 1000px){
+    .header{
+        display: none;
+    }
 }
 
 .content{
@@ -137,6 +142,12 @@ li{
     padding: 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .personal_page{
+        top: 2vh;
+    }
+}
+
 .content_personal{
     margin: 0 auto;
     display: flex;
@@ -149,6 +160,16 @@ li{
     margin: 0;
     max-width: 190px;
     min-width: 190px;
+}
+
+@media screen and (max-width: 1000px){
+    .content_menu{
+        display: none;
+    }    
+    .content_personal{
+        max-width: none;
+        min-width: 0;
+    }
 }
 
 .menu{
@@ -165,12 +186,14 @@ li{
     font-size: 0.8em
 }
 
+
 .nav-menu{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 
 .menu ul{
     padding: 0;
@@ -203,6 +226,12 @@ li{
     width: 80%;
     display: flex;
 }
+@media screen and (max-width: 1000px) {
+    .main{
+        width: 100%;
+        flex-direction: column;
+    }
+}
 
 /* Narrow-Photo */
 .narrow_column{
@@ -211,12 +240,14 @@ li{
     position: sticky;
 }
 
+
 .page_photo, .friends_page, .online_friends, .block{
     background: #36393e;
     box-shadow: 0 0 1em rgba(0,0,0,0.5);
     border-radius: 20px;
     margin-bottom: 1em;
 }
+
 .photo{
     padding: 0.7em;
     padding-bottom: 0.4em;
@@ -224,7 +255,6 @@ li{
 
 .photo img{
     border-radius: 20px;
-
     border: 2px solid #d0d0d0;
 }
 
@@ -332,6 +362,17 @@ li{
     opacity: 1;
 }
 
+@media screen and (max-width: 1000px) {
+    .narrow_column{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .button_photo a{
+        font-size: 0.8em;
+    }
+}
+
 /*Narrow-friends*/
 .friends_page{
     text-align: center;
@@ -436,6 +477,27 @@ li{
 }
 .friends_online_list{
     padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .page_photo{
+        margin: 0;
+    }
+    .friends_list{
+        display: none;
+    }
+    .friends_online_list{
+        display: none;
+    }
+    .friends_page .line{
+        display: none;
+    }
+    .friends_page{
+        margin: 1em 0;
+    }
+    .friends_page > a{
+        padding: 0.2vh 0;
+    }
 }
 
 /* main_column */
@@ -773,5 +835,27 @@ li{
     object-position: center;
 }
 
-
+@media screen and (max-width: 1000px) {
+    .main_column{
+        width: 90%;
+        margin: 0 auto;
+        min-width: 0em;
+    }
+    .main_column .name_status{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.2em 1em;
+    }
+    .more_information_button .info{
+        font-size: 0.65em;
+    }
+    .last_photo{
+        width: 20vw;
+        height: 20vw;
+    }
+    #search_line{
+        width: 85%;
+        height: 100%;
+    }
+}
 
