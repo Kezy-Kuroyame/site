@@ -8,14 +8,18 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <script src="/lab 3/assets/script.JS"></script>
+    <script src="../lab 3/assets/script.js"></script>
     <div class="main">
         <div class="buttons">
-            <button id="create_table" onclick="createTable()">Создать таблицу</button>
-            <button id="add_row">Добавить строку</button>
-            <button id="delete_row">Удалить строку № </button><input type="text">
+            <button id="create_table" onclick="create_table()" class="button">Создать таблицу</button>
+            <button id="add_row" onclick="add_new_row()" class="button" disabled>Добавить строку</button>
+            <div class="button">
+                <button id="delete_row" onclick='delete_row()' disabled>Удалить строку № </button>
+                <input type="text" id="num_row" placeholder="Номер" disabled>
+            </div>
+            
         </div>
-        <div class="table" id="table"></div>
+        <div id="table"></div>
     </div>
 </body>
 </html>
